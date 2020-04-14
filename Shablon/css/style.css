@@ -1,0 +1,23 @@
+.content ul li{
+    list-style: none;
+}
+.schedule{
+    background: black;
+    display: inline-block;
+}
+.displayNone{
+    display: none;
+}
+.mini-task{
+    margin: 5px;
+    cursor: pointer;
+}
+.task, .mini-task{
+    border: 1px solid #d8d8d8;
+    box-shadow: 5px 5px 5px #d8d8d8;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Okami</title>
+</head>
+<body>
+<div class="container-fluid header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#">Okami</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+<!--            <form class="form-inline my-2 my-lg-0">-->
+<!--                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--            </form>-->
+        </div>
+    </nav>
+</div>
+<div class="container-fluid row">
+    <div class="col-3 content">
+        <ul>
+            <a href="#"><li>рабочи стол</li></a>
+            <a href="#"><li>сотрудники</li></a>
+            <a href="#"><li>студенты</li></a>
+            <a href="#"><li>задачи</li></a>
+            <a href="#"><li>отчет</li></a>
+            <a href="#"><li>лекции</li></a>
+            <a href="#"><li>документация</li></a>
+        </ul>
+    </div>
+    <div class="col content">
+        <div class="row">
+            <div class="col-3 mini-task">
+                <ul>
+                    <li>названия задачи</li>
+                    <li>описания</li>
+                    <li>дата</li>
+                    <li>дата завершения</li>
+                    <li>коментарий</li>
+                    <li>отправить отчет</li>
+                </ul>
+            </div>
+            <div class="col-3 mini-task">
+                <ul>
+                    <li>ФИО сотрудника</li>
+                    <li>кафедра</li>
+                    <li>спецальность</li>
+                    <li>дата раждения</li>
+                    <li>создать задачу</li>
+                    <li>отправить отчет</li>
+                </ul>
+            </div>
+            <div class="col-3 mini-task">
+                <ul>
+                    <li>придмет</li>
+                    <li>лекция</li>
+                    <li>практика</li>
+                    <li>отправить отчет</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col task">
+                <form>
+                    <table>
+                        <tr>
+                            <td>названия задачи</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>описания</td>
+                            <td><input type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td>дата</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>дата завершения</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>коментарий</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value=" отправить отчет"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col task">
+                <form>
+                    <table>
+                        <tr>
+                            <td>ФИО сотрудника</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>кафедра</td>
+                            <td><input type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td>спецальность</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>дата раждения</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="создать сотрудника"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col task">
+                <form>
+                    <table>
+                        <tr>
+                            <td>придмет</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>лекция</td>
+                            <td><input type="text"> </td>
+                        </tr>
+
+                        <tr>
+                            <td>описания</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>практика</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="создать лекцию"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 task">
+                <ul>
+                    <li>задачи:</li>
+                    <li>лекции:</li>
+                    <li>практика:</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><div class="schedule" style="width: 81%">81%</div></li>
+                    <li><div class="schedule" style="width: 67%">67%</div></li>
+                    <li><div class="schedule" style="width: 15%">15%</div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col task">
+                error number
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid footer">
+    <div class="row">
+        <div class="col"><a href="#">о сайте</a></div>
+        <div class="col"><a href="#">документация</a></div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/javascript.js"></script>
+</html>
