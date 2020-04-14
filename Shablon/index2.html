@@ -7,29 +7,38 @@
     <title>Project</title>
 </head>
 <body>
-<div class="container-fluid header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="#">Okami</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-light bg-dark text-white">
+  <a class="navbar-brand">Система HelpDesk Ставропольского филиала МПГУ</a>
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#staticBackdrop">
+          Войти
+          </button>
+          <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h5 class="modal-title" id="staticBackdropLabel">Вход</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Задачи<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Сотрудники</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Студенты</a>
-                </li>
-            </ul>
-<!--            <form class="form-inline my-2 my-lg-0">-->
-<!--                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-<!--                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-<!--            </form>-->
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group text-dark">
+    <label for="Login">Логин</label>
+    <input type="Login" class="form-control" id="exampleinputlogin" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">Забыли логин или пароль? Обратитесь к администратору admin@@@@@.ru</small>
+  </div>
+  <div class="form-group text-dark">
+    <label for="exampleInputPassword1">Пароль</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Войти</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
     </nav>
 </div>
@@ -37,15 +46,14 @@
 <div class="container-fluid row">
     <div class="col-2 content">
         <ul>
-            <a href="#" class="href-task" data-name="new-task"><li>новая</li></a>
-            <a href="#" class="href-task" data-name><li>просмотреть</li></a>
-            <a href="#" class="href-task"><li>отчет</li></a>
+            <a href="#" class="href-task" data-name="new-task"><li>Личный кабинет</li></a>
+            <a href="#" class="href-task" data-name><li>Сформировать отчет</li></a>
             <hr>
-            <a href="#" class="href-cooperator"><li>добавить</li></a>
-            <a href="#" class="href-cooperator"><li>личный кабинет</li></a>
+            <a href="#" class="href-cooperator"><li>Описание системы HelpDesk</li></a>
+            <a href="#" class="href-cooperator"><li>Руководство пользователя HelpDesk</li></a>
             <hr>
-            <a href="#" class="href-lesen"><li>добавить</li></a>
-            <a href="#" class="href-lesen"><li>просмотреть</li></a>
+            <a href="#" class="href-lesen"><li>Добавить пользователя</li></a>
+            <a href="#" class="href-lesen"><li>Руководство администратора</li></a>
         </ul>
     </div>
     <nav class="container">
@@ -81,7 +89,7 @@
                               <th scope="row">1</th>
                               <td>Не работает интернет</td>
                               <td>"ФИО"</td>
-                              <td>Почему то отключился инетрнет в жопе мира, прилети сука быстро включи</td>
+                              <td>Почему то отключился инетрнет, придите и помогите включить</td>
                               <td>14.03.2020</td>
                               <td>
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -102,7 +110,7 @@
   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
       <form>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Имя задачи</label>
+    <label for="exampleFormControlInput1">Краткое описание</label>
     <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Придумайте имя задачи">
   </div>
   <div class="form-group">
@@ -118,13 +126,38 @@
        <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required></input>
    </div>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Описание задачи</label>
+    <label for="exampleFormControlTextarea1">Полное описание задачи</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
 </form>
     <button type="button" class="btn btn-primary btn-lg btn-block">Отправить заявку</button>
   </div>
-  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+    <h3>Архив задач</h3>
+       <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Название задачи</th>
+          <th scope="col">ФИО постановщика</th>
+          <th scope="col">Описание</th>
+          <th scope="col">Дата выполнения</th>
+          <th scope="col">Отметка о выполнении</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Не работает интернет</td>
+          <td>"ФИО"</td>
+          <td>Почему то отключился инетрнет, придите и помогите включить</td>
+          <td>24.03.2020</td>
+          <td>
+           <div class="alert alert-success" role="alert">Выполнено</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 </nav>
 </body>
