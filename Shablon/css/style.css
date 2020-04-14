@@ -44,3 +44,6 @@
     border-right: none;
     border-color: #1d2124;
 }
+#buttoncomplite {
+    display: inline-block;
+}
