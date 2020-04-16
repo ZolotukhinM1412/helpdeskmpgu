@@ -7,20 +7,33 @@
     <title>Project</title>
 </head>
 <body>
-	<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  <nav class="navbar navbar-light bg-dark text-white">
+<a class="navbar-brand">Система HelpDesk Ставропольского филиала МПГУ</a>
+</div>
+</nav>
+<div class="authorise-main">
+<div class="maingroup">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Вход</h1>
+    <p class="lead">Для доступа к системе введите логин и пароль</p>
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+</div>
+  <div class="form-group row">
+    <label for="inputLogin" class="col-sm-2 col-form-label">Логин</label>
+    <div class="col-sm-10">
+      <input type="inputLogin" class="form-control" id="inputLogin">
   </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Пароль</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword">
+  </div>
+      <small id="LoginHelp" class="form-text text-muted">Для получения данных для входа обратитесь к администратору - admin@mpgu26.ru</small>
+</div>
+        <button type="submit" class="btn btn-dark btn-block">Войти</button>
 </form>
+</div>
+</div>
 </body>
